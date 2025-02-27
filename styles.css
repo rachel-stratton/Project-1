@@ -56,8 +56,10 @@ nav {
 }
 
 /* Product section */
+
 .container-product {
   display: flex;
+  justify-content: space-between;
   border: solid#087e8b;
   width: 100vw;
   margin-bottom: 25px;
@@ -75,21 +77,53 @@ nav {
   display: flex;
   width: 100%;
   flex-direction: row;
-  gap: 2rem;
+  gap: 1rem;
   align-items: center;
   justify-content: space-between;
 }
 
-.image-card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* Slideshow container */
+.slideshow-container {
+  max-width: 50%;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
 }
 
-.image-card img {
+.slideshow-container img {
+  max-height: 400px;
   width: 100%;
-  height: auto;
-  overflow: hidden;
+  padding: auto;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .card {
@@ -124,14 +158,14 @@ nav {
 }
 
 #chips {
-	background-color: #2c365e;
-	color: white;
-	padding: 10px;
-	font-size: 16px;
-	border: none;
-	cursor: pointer;
-	margin: 5px, 5px,5pc,5px;
-  }
+  background-color: #2c365e;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin: 5px, 5px, 5pc, 5px;
+}
 
 .btn {
   background-color: #c2aff0;
@@ -142,6 +176,12 @@ nav {
   font-weight: bold;
   cursor: pointer;
   border: none;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: #aaa 0 0 10px;
 }
 
 /* Other Product Section */
@@ -213,6 +253,28 @@ nav {
   background-color: #087e8b;
   box-shadow: #aaa 0 0 10px;
 }
+
+/* Video*/
+.Cookie-Video{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Video {
+  display: flex;
+  gap: 2rem;
+  width: 90%;
+  background-color: #0c7c59;
+  padding: 10px;
+  margin-bottom: 25px;
+}
+
+.Video video {
+  width: 100%;
+  height: auto;
+  max-width:100% ;
+}
+
 /* Bakery Contact Now section */
 .newsletter {
   background-color: #087e8b;
