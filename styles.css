@@ -5,6 +5,10 @@
   --purple: #c2aff0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -14,6 +18,13 @@ body {
   font-family: sans-serif;
   color: #333;
   line-height: 1.6;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  background-color: var(--white);
+  z-index: 2;
 }
 
 /* Container for consistent spacing */
